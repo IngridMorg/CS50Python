@@ -1,0 +1,24 @@
+Conditionals
+    N/A (already know)
+
+Creating your own parity function
+    essentially defining your own function (i.e. is_even() ) to use within an if statement:
+                if is_even(x) :
+
+Pythonic programming
+    aka, ways of programming that are only ever really seen in python
+    i.e. 'return True if n%2 == 0 else False'
+        although the above can be simplified to:
+            return n%2 == 0
+            where the program will evaluate what is happening within the n%2==0 as either true or false
+
+match statements
+    can be used to map things to another (essentially a switch case statement)
+        match name:
+          case "Harry" | "Hermione" | "Ron":
+              print("Gryffindor")
+          case "Draco":
+              print("Slytherin")
+          case _:
+              print("Who?")
+    '_' will match any input (essentially default)
