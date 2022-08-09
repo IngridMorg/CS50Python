@@ -1,0 +1,28 @@
+The documentation of the print() function includes end='\n', this is why the print statement always adds a newline at
+the ends. It is also why we can change this to be a different value by doing something like
+        print("hello", end="")
+
+print(f"hello, {name}")
+    a special way to print with strings, essentially adds string formatting.
+
+String Functions
+    strip()  -  remove whitespace that may have been added before or after a user's input
+    title()  -  capitalise the first letter of every word in a string
+
+Non-string input
+    x = int(input("Enter a number: ")  -  automatically cast the string input to an integer
+        same goes for floats
+
+Float formatting
+   What if we want to print 1000 as 1,000?
+    print(f"{z:,}") where z = 1000
+        this command means that the output will include the desired commas where necessary
+    print(f"{z:.2f}") rounds down to the nearest 2 decimal points
+        long(er) winded version: z = round(x / y, 2)
+
+Functions
+    we can default output to functions by assigning a value in the parameters, that will be overwritten if when the
+    function is called a different value is passed. i.e.
+                                                        def hello(to= "world"):
+                                                            print("Hello", to)
+
